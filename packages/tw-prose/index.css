@@ -590,7 +590,7 @@
     line-height: 1.6666667;
     margin-top: 1.6666667em;
     margin-bottom: 1.6666667em;
-    border-radius: 0.25rem;
+    border-radius: var(--radius-sm);
     padding-top: 0.6666667em;
     padding-inline-end: 1em;
     padding-bottom: 0.6666667em;
