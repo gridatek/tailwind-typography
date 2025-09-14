@@ -219,8 +219,8 @@
     font-family: inherit;
     color: var(--tw-prose-kbd);
     box-shadow:
-      0 0 0 1px rgb(var(--tw-prose-kbd-shadows) / 10%),
-      0 3px 0 rgb(var(--tw-prose-kbd-shadows) / 10%);
+      0 0 0 1px oklch(from var(--tw-prose-kbd-shadows) l c h / 10%),
+      0 3px 0 oklch(from var(--tw-prose-kbd-shadows) l c h / 10%);
     font-size: 0.875em;
     border-radius: 0.3125rem;
     padding-top: 0.1875em;

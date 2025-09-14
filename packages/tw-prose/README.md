@@ -34,7 +34,7 @@ Add the imports and required theme configuration to your CSS file:
   --tw-prose-quote-borders: var(--color-gray-200);
   --tw-prose-captions: var(--color-gray-500);
   --tw-prose-kbd: var(--color-gray-900);
-  --tw-prose-kbd-shadows: var(--color-gray-200);
+  --tw-prose-kbd-shadows: var(--color-gray-900);
   --tw-prose-code: var(--color-gray-900);
   --tw-prose-pre-code: var(--color-gray-200);
   --tw-prose-pre-bg: var(--color-gray-800);
@@ -54,7 +54,7 @@ Add the imports and required theme configuration to your CSS file:
   --tw-prose-invert-quote-borders: var(--color-gray-700);
   --tw-prose-invert-captions: var(--color-gray-400);
   --tw-prose-invert-kbd: var(--color-white);
-  --tw-prose-invert-kbd-shadows: var(--color-gray-600);
+  --tw-prose-invert-kbd-shadows: var(--color-white);
   --tw-prose-invert-code: var(--color-white);
   --tw-prose-invert-pre-code: var(--color-gray-300);
   --tw-prose-invert-pre-bg: rgba(0, 0, 0, 0.5);
