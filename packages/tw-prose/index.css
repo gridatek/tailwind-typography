@@ -7,7 +7,7 @@
   color: var(--tw-prose-body);
   max-width: 65ch;
   font-size: var(--text-base);
-  line-height: 1.75;
+  line-height: calc(var(--leading-normal) + 0.25);
 
   & :where(p):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
     margin-top: 1.25em;
@@ -190,7 +190,7 @@
     font-weight: var(--font-weight-semibold);
     margin-top: 1.5em;
     margin-bottom: 0.5em;
-    line-height: 1.5;
+    line-height: var(--leading-normal);
   }
 
   & :where(h4 strong):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
@@ -697,7 +697,7 @@
 
   & :where(table):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
     font-size: 0.8571429em;
-    line-height: 1.5;
+    line-height: var(--leading-normal);
   }
 
   & :where(thead th):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
@@ -800,7 +800,7 @@
     font-size: 1.3333333em;
     margin-top: 1.6666667em;
     margin-bottom: 0.6666667em;
-    line-height: 1.5;
+    line-height: var(--leading-normal);
   }
 
   & :where(h4):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
@@ -852,7 +852,7 @@
 
   & :where(pre):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
     font-size: 0.8888889em;
-    line-height: 1.75;
+    line-height: calc(var(--leading-normal) + 0.25);
     margin-top: 2em;
     margin-bottom: 2em;
     border-radius: 0.375rem;
@@ -962,7 +962,7 @@
 
   & :where(table):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
     font-size: 0.8888889em;
-    line-height: 1.5;
+    line-height: var(--leading-normal);
   }
 
   & :where(thead th):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
@@ -1012,7 +1012,7 @@
 
   & :where(figcaption):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
     font-size: 0.8888889em;
-    line-height: 1.5;
+    line-height: var(--leading-normal);
     margin-top: 1em;
   }
 
@@ -1036,7 +1036,7 @@
 
   & :where([class~='lead']):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
     font-size: 1.2em;
-    line-height: 1.5;
+    line-height: var(--leading-normal);
     margin-top: 1em;
     margin-bottom: 1em;
   }
@@ -1336,7 +1336,7 @@
   & :where(h4):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
     margin-top: 1.6666667em;
     margin-bottom: 0.6666667em;
-    line-height: 1.5;
+    line-height: var(--leading-normal);
   }
 
   & :where(img):not(:where([class~='not-prose'], [class~='not-prose'] *)) {
