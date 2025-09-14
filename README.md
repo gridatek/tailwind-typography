@@ -9,8 +9,10 @@ npm install --save-dev tw-prose
 ```
 
 ```css
-@import "tailwindcss";
-@import "tw-prose"; 
+@import 'tailwindcss';
+@import 'tw-prose';
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
   /* Required theme variables for tw-prose */
