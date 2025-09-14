@@ -652,6 +652,58 @@ test.describe('Typography Libraries Comparison', () => {
     }
   });
 
+  // Test kbd element shadow color implementation
+  test('should render kbd elements with proper shadow colors', async ({ page }) => {
+    // Test light mode first
+    const kbdElement = page.locator('[data-testid="tw-prose-container"] kbd').first();
+
+    await expect(kbdElement).toBeVisible();
+
+    const lightModeStyles = await kbdElement.evaluate((el) => {
+      const styles = window.getComputedStyle(el);
+      return {
+        boxShadow: styles.getPropertyValue('box-shadow'),
+        color: styles.getPropertyValue('color'),
+        backgroundColor: styles.getPropertyValue('background-color'),
+        borderRadius: styles.getPropertyValue('border-radius'),
+        padding: styles.getPropertyValue('padding'),
+      };
+    });
+
+    // Verify box-shadow is applied
+    expect(lightModeStyles.boxShadow).toBeTruthy();
+    expect(lightModeStyles.boxShadow).not.toBe('none');
+
+    // Verify the shadow uses oklch color format (should not contain 'rgb(var(' which would indicate the old broken format)
+    expect(lightModeStyles.boxShadow).not.toContain('rgb(var(');
+
+    console.log(`✅ Kbd light mode shadow: ${lightModeStyles.boxShadow}`);
+
+    // Test dark mode
+    const darkModeCheckbox = page.locator('[data-testid="dark-mode-toggle"]');
+    await darkModeCheckbox.click();
+    await page.waitForTimeout(500);
+
+    const darkModeStyles = await kbdElement.evaluate((el) => {
+      const styles = window.getComputedStyle(el);
+      return {
+        boxShadow: styles.getPropertyValue('box-shadow'),
+        color: styles.getPropertyValue('color'),
+      };
+    });
+
+    // Verify shadow still works in dark mode
+    expect(darkModeStyles.boxShadow).toBeTruthy();
+    expect(darkModeStyles.boxShadow).not.toBe('none');
+    expect(darkModeStyles.boxShadow).not.toContain('rgb(var(');
+
+    // Shadow should be different in dark vs light mode (different color values)
+    expect(darkModeStyles.boxShadow).not.toBe(lightModeStyles.boxShadow);
+
+    console.log(`✅ Kbd dark mode shadow: ${darkModeStyles.boxShadow}`);
+    console.log(`✅ Kbd shadow color implementation working correctly`);
+  });
+
   // Performance test
   test('should render within performance budget', async ({ page }) => {
     const startTime = Date.now();
