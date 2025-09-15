@@ -51,7 +51,7 @@ npm install --save-dev tw-prose
   --tw-prose-invert-kbd-shadows: var(--color-white);
   --tw-prose-invert-code: var(--color-white);
   --tw-prose-invert-pre-code: var(--color-gray-300);
-  --tw-prose-invert-pre-bg: rgba(0, 0, 0, 0.5);
+  --tw-prose-invert-pre-bg: oklch(from var(--color-black) l c h / 0.5);
   --tw-prose-invert-th-borders: var(--color-gray-600);
   --tw-prose-invert-td-borders: var(--color-gray-700);
 }
