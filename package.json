@@ -29,11 +29,11 @@
   "homepage": "https://github.com/gridatek/tailwind-typography#readme",
   "devDependencies": {
     "husky": "^9.1.7",
-    "lint-staged": "^16.1.6",
+    "lint-staged": "^16.2.6",
     "prettier": "^3.6.2",
-    "vite": "^7.1.5",
-    "@tailwindcss/vite": "^4.1.13",
-    "tailwindcss": "^4.1.13"
+    "vite": "^7.2.2",
+    "@tailwindcss/vite": "^4.1.17",
+    "tailwindcss": "^4.1.17"
   },
   "scripts": {
     "prepare": "husky",

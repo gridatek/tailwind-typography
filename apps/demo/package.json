@@ -20,25 +20,25 @@
     "@angular/forms": "^20.2.0",
     "@angular/platform-browser": "^20.2.0",
     "@angular/router": "^20.2.0",
-    "tailwindcss": "^4.1.13",
-    "@tailwindcss/postcss": "^4.1.13",
+    "@tailwindcss/postcss": "^4.1.17",
     "postcss": "^8.5.6",
     "rxjs": "~7.8.0",
+    "tailwindcss": "^4.1.13",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
     "@angular/build": "^20.2.0",
     "@angular/cli": "^20.2.0",
     "@angular/compiler-cli": "^20.2.0",
+    "@playwright/test": "^1.48.2",
+    "@tailwindcss/typography": "^0.5.19",
     "@types/jasmine": "~5.1.0",
-    "@tailwindcss/typography": "^0.5.16",
     "jasmine-core": "~5.9.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.9.2",
-    "@playwright/test": "^1.48.2"
+    "typescript": "~5.9.2"
   }
 }
